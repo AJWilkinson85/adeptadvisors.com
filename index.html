@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Adept Advisors</title>
+<meta name="description" content="AI literacy for people who run businesses. Half-day working sessions on your real inbox, quotes, and books, from someone who builds this every day. Phoenix, Arizona and remote.">
+<meta name="theme-color" content="#F4F6F7">
+<meta property="og:title" content="Adept Advisors">
+<meta property="og:description" content="AI literacy for people who run businesses. Working sessions on your real work, not on demos.">
+<meta property="og:url" content="https://www.adeptadvisors.com/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230D1216'/%3E%3Crect x='20' y='20' width='24' height='24' fill='%23D4894B' transform='rotate(45 32 32)'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F4F6F7;--bg2:#E9EDEF;--line:#CBD3D8;--ink:#0D1216;--ink2:#3C4852;--mute:#6E7C88;--accent:#C4732F;--glacier:#2C7D96;--dark:#0D1216;--dark2:#131B22;--darkline:#243039;
+--display:'Archivo',Impact,sans-serif;--body:'IBM Plex Sans',system-ui,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{background:var(--bg);color-scheme:light;scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+.top{display:flex;justify-content:space-between;align-items:center;padding:22px 0;font-family:var(--display);font-size:15px;font-weight:500}
+.top{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)}
+.top .mark{font-weight:500;color:var(--ink);display:flex;align-items:center;gap:10px;letter-spacing:.06em}
+.top .mark i{width:14px;height:14px;background:var(--accent);border-radius:3px;transform:rotate(45deg);display:inline-block}
+.top nav{display:flex;gap:26px;align-items:center} .top nav a:hover{color:var(--accent)}
+.btn{display:inline-block;font-family:var(--mono);font-weight:500;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:13px 18px;border-radius:0;background:var(--ink);color:#fff;border:1px solid var(--ink);transition:background .15s}
+.btn:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.ghost{background:transparent;color:var(--ink)} .btn.ghost:hover{background:var(--bg2);color:var(--ink)}
+.hero{padding:64px 0 56px;display:grid;grid-template-columns:1.25fr 1fr;gap:56px;align-items:center;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--glacier);margin-bottom:18px}
+.hero h1{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:800;font-size:clamp(48px,7vw,96px);line-height:.92;letter-spacing:-.02em;text-transform:uppercase;text-wrap:balance}
+.hero h1 span{color:var(--accent)}
+.hero p{margin-top:22px;font-size:20px;color:var(--ink2);max-width:30em;text-wrap:pretty}
+.hero .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero .cta small{font-family:var(--mono);font-size:12px;color:var(--mute)}
+.board{background:var(--dark);color:#E4E9ED;border:1px solid var(--darkline);padding:26px 26px 22px;font-family:var(--mono);font-size:13px;line-height:1.7;box-shadow:0 30px 60px -30px rgba(20,33,61,.5)}
+.board .t{color:#6E7C88;font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px;display:flex;justify-content:space-between}
+.board ol{list-style:none;counter-reset:n} .board li{counter-increment:n;display:grid;grid-template-columns:28px 1fr auto;gap:12px;padding:9px 0;border-top:1px solid var(--darkline);align-items:baseline}
+.board li::before{content:counter(n,decimal-leading-zero);color:#6E7C88} .board li b{font-weight:500;color:#fff;font-family:var(--body);font-size:15px}
+.board li em{font-style:normal;color:#D4894B;font-size:12px}
+.board .foot{margin-top:14px;color:#6E7C88;font-size:12px}
+section{padding:80px 0;border-bottom:1px solid var(--line)}
+.sec-h{max-width:34em;margin-bottom:44px}
+.sec-h h2{font-family:var(--display);font-variation-settings:"wdth" 75;font-weight:700;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.sec-h p{margin-top:14px;color:var(--ink2);font-size:19px}
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+.who div{padding-top:18px;border-top:1px solid var(--ink)} .who h3{font-family:var(--display);font-variation-settings:"wdth" 88;font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.01em}
+.who p{font-size:16.5px;color:var(--ink2)}
+.curr{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}
+.curr .item{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:22px 0;border-bottom:1px solid var(--line)}
+.curr .n{font-family:var(--mono);font-size:12px;color:var(--accent);padding-top:6px}
+.curr h3{font-family:var(--display);font-variation-settings:"wdth" 88;font-size:20px;font-weight:600;letter-spacing:-.01em;margin-bottom:6px} .curr p{font-size:16px;color:var(--ink2)}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:stretch}
+.offer{border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;background:#fff}
+.offer.lead{border-color:var(--ink);box-shadow:0 20px 50px -30px rgba(13,18,22,.5)}
+.offer .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:12px}
+.offer h3{font-family:var(--display);font-variation-settings:"wdth" 88;font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1.1}
+.offer .price{font-family:var(--display);font-variation-settings:"wdth" 80;font-size:36px;font-weight:700;letter-spacing:-.02em;margin:14px 0 2px;font-variant-numeric:tabular-nums} .offer .price small{font-size:14px;font-weight:500;color:var(--mute);letter-spacing:0}
+.offer .for{font-size:15px;color:var(--mute);margin-bottom:18px}
+.offer ul{list-style:none;font-size:15.5px;color:var(--ink2);flex-grow:1} .offer li{padding:7px 0 7px 22px;position:relative;border-top:1px solid var(--bg2)}
+.offer li::before{content:'';position:absolute;left:0;top:15px;width:10px;height:10px;border-radius:2px;background:var(--accent);transform:rotate(45deg) scale(.7)}
+.offer .btn{margin-top:22px;text-align:center;border-radius:0}
+.note{margin-top:22px;font-size:15px;color:var(--mute);max-width:52em}
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:56px;align-items:start}
+.about .card{background:var(--dark);color:#E4E9ED;border:1px solid var(--darkline);padding:26px;font-family:var(--mono);font-size:13px;line-height:1.8}
+.about .card b{display:block;font-family:var(--display);font-variation-settings:"wdth" 88;font-size:22px;font-weight:700;letter-spacing:-.02em;margin-bottom:6px;color:#fff}
+.about .card span{display:block;color:#A7B3BD} .about .card a{color:#7FB8CC;text-decoration:underline;text-underline-offset:3px}
+.about .prose p{margin-bottom:18px;color:var(--ink2)} .about .prose p:first-child{color:var(--ink);font-size:21px}
+.faq{max-width:46em} .faq details{border-top:1px solid var(--line);padding:18px 0} .faq details:last-child{border-bottom:1px solid var(--line)}
+.faq summary{font-family:var(--display);font-variation-settings:"wdth" 88;font-weight:600;font-size:19px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.faq summary::after{content:'+';color:var(--accent);font-weight:400} .faq details[open] summary::after{content:'–'}
+.faq p{margin-top:10px;color:var(--ink2);font-size:16.5px}
+.contact{padding:96px 0 64px;border:0;text-align:left}
+.contact h2{font-family:var(--display);font-variation-settings:"wdth" 70;font-weight:800;font-size:clamp(40px,7vw,96px);letter-spacing:-.02em;line-height:.92;text-transform:uppercase;max-width:12em;text-wrap:balance}
+.contact h2 span{color:var(--accent)}
+.contact p{margin-top:18px;font-size:19px;color:var(--ink2);max-width:32em}
+.contact .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
+footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;border-top:1px solid var(--line)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px}.who{grid-template-columns:1fr}.curr{grid-template-columns:1fr}.offers{grid-template-columns:1fr}.about{grid-template-columns:1fr}}
+@media(max-width:600px){.wrap{padding:0 18px}.top nav{display:none}.hero{padding:40px 0 44px}section{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style></head><body>
+<div class="wrap">
+<header class="top"><a class="mark" href="#"><i></i>Adept <span style="color:var(--accent)">Advisors</span></a><nav><a href="#learn">What you learn</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Book a session</a></nav></header>
+
+<section class="hero">
+  <div>
+    <div class="eyebrow">AI literacy for people who run businesses</div>
+    <h1>Learn to use AI on your <span>actual work,</span> not on demos.</h1>
+    <p>A half-day working session for owner-operators and their teams. You bring the real inbox, the real quotes, the real books. You leave with three workflows running and a written playbook for the rest.</p>
+    <div class="cta"><a class="btn" href="#offers">See the offers</a><a class="btn ghost" href="#learn">What's covered</a><small>Phoenix, Arizona · on-site or remote</small></div>
+  </div>
+  <aside class="board" aria-label="Sample session agenda">
+    <div class="t"><span>Working session · agenda</span><span>4h 00m</span></div>
+    <ol>
+      <li><b>How these models actually work</b><em>40 min</em></li>
+      <li><b>Where they're wrong, and how to tell</b><em>30 min</em></li>
+      <li><b>Your inbox: triage, drafts, follow-up</b><em>45 min</em></li>
+      <li><b>Quotes, proposals, and customer replies</b><em>45 min</em></li>
+      <li><b>The books: categorization and reporting</b><em>45 min</em></li>
+      <li><b>Your playbook, written together</b><em>35 min</em></li>
+    </ol>
+    <div class="foot">Every block uses your business's real material. Nothing leaves the room.</div>
+  </aside>
+</section>
+
+<section id="who">
+  <div class="sec-h"><h2>Built for the business where the owner still answers the phone.</h2><p>Not enterprise AI strategy. The practical version, for the people who do the work.</p></div>
+  <div class="who">
+    <div><h3>Owner-operators</h3><p>Contractors, studios, clinics, agencies, shops. Two to thirty people. You've tried ChatGPT, got a mediocre paragraph, and went back to doing it by hand.</p></div>
+    <div><h3>Office and finance staff</h3><p>The person who runs the inbox, the invoices, and the bookkeeping. Usually one person. Usually underwater. This is the most leverage in the building.</p></div>
+    <div><h3>Small teams, together</h3><p>Sessions work best with the owner and the two or three people who touch customers and money every day, in the same room, on the same tools.</p></div>
+  </div>
+</section>
+
+<section id="learn">
+  <div class="sec-h"><h2>What you'll actually be able to do afterward.</h2><p>Six things. Each one practiced on your own material during the session, not explained on a slide.</p></div>
+  <div class="curr">
+    <div class="item"><div class="n">01</div><div><h3>Know what the tool is</h3><p>How a language model produces an answer, why it sounds confident when it's wrong, and what that means for how much you trust it with money and customers.</p></div></div>
+    <div class="item"><div class="n">02</div><div><h3>Ask in a way that works</h3><p>Context, examples, and constraints. The difference between "write me an email" and a draft you'd actually send, and how to make it repeatable.</p></div></div>
+    <div class="item"><div class="n">03</div><div><h3>Run your inbox through it</h3><p>Triage, summarize, draft replies, chase the ones who went quiet. The same standards you'd hold a new assistant to.</p></div></div>
+    <div class="item"><div class="n">04</div><div><h3>Quote and propose faster</h3><p>Turn a phone call's worth of notes into a clean scope and price, in your voice, with your terms. Then do it again for the next one in four minutes.</p></div></div>
+    <div class="item"><div class="n">05</div><div><h3>Clean up the books</h3><p>Categorize transactions, catch the ones that are wrong, and get a plain-English read on the month without waiting for the accountant.</p></div></div>
+    <div class="item"><div class="n">06</div><div><h3>Decide what not to automate</h3><p>Where the risk is real: customer data, legal language, anything with a signature. A short list of rules your whole team can follow.</p></div></div>
+  </div>
+</section>
+
+<section id="offers">
+  <div class="sec-h"><h2>Three ways to work together.</h2><p>Start with the session. Most people stop there. Some want it built for them.</p></div>
+  <div class="offers">
+    <article class="offer lead">
+      <div class="k">Start here</div>
+      <h3>The Working Session</h3>
+      <div class="price">$1,500 <small>/ half day</small></div>
+      <div class="for">Owner plus up to five people. On-site in the Phoenix area, or remote.</div>
+      <ul><li>Four hours, hands-on, on your real work</li><li>Three workflows running before we leave</li><li>A written playbook for your business</li><li>Tool recommendations with real costs</li><li>Two weeks of email follow-up</li></ul>
+      <a class="btn" href="#contact">Book a session</a>
+    </article>
+    <article class="offer">
+      <div class="k">Have it built</div>
+      <h3>The 30-Day Build</h3>
+      <div class="price">$4,500 <small>/ engagement</small></div>
+      <div class="for">For businesses that want the workflows built, tested, and handed over.</div>
+      <ul><li>Everything in the Working Session</li><li>Three to five workflows built with you</li><li>Weekly working calls for four weeks</li><li>Documentation your staff can follow</li><li>Connected to the tools you already use</li></ul>
+      <a class="btn ghost" href="#contact">Ask about a build</a>
+    </article>
+    <article class="offer">
+      <div class="k">Keep it running</div>
+      <h3>Advisor on Call</h3>
+      <div class="price">$600 <small>/ month</small></div>
+      <div class="for">For past clients who want someone to ask when the tools change, which is monthly.</div>
+      <ul><li>Two office-hours calls a month</li><li>Same-week answers by email</li><li>One new workflow each quarter</li><li>A quarterly "what changed" briefing</li><li>Cancel any month</li></ul>
+      <a class="btn ghost" href="#contact">Ask about advisory</a>
+    </article>
+  </div>
+  <p class="note">Pricing is flat and quoted up front. If a session doesn't produce at least one workflow you'll keep using, you don't pay for it.</p>
+</section>
+
+<section id="about">
+  <div class="sec-h"><h2>Taught by someone who builds this every day.</h2></div>
+  <div class="about">
+    <div class="card"><b>Aaron Wilkinson</b><span>Founder, Adept Advisors</span><span>Phoenix, Arizona</span><span style="margin-top:12px">Seventeen years in banking, wealth management, and fintech product. Currently building the customer, payments, and finance platform for a Phoenix operating company.</span><span style="margin-top:12px"><a href="https://www.aaronjwilkinson.com">aaronjwilkinson.com</a></span></div>
+    <div class="prose">
+      <p>I spent nine years on the money side of business, as a banker, a loan officer, and a financial advisor, before I taught myself to build software. Now I do both at once: I write the queries, ship the apps, and stand up the infrastructure that a company's customers and payments run through.</p>
+      <p>That's the background I teach from. Not "AI is going to change everything," but which of the twenty things you do every week it can take off your plate this month, which ones it can't, and how to tell the difference before it costs you a customer.</p>
+      <p>Sessions are small on purpose. I'd rather do one a week well than five badly.</p>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="sec-h"><h2>Questions people ask before booking.</h2></div>
+  <div class="faq">
+    <details><summary>Which AI tools do you teach?</summary><p>Whichever fits your business. Most sessions end up on Claude or ChatGPT for the writing work, plus whatever your accounting and email already are. I'm not reselling software and I don't take referral fees.</p></details>
+    <details><summary>Do we need to be technical?</summary><p>No. If you can send an email and open a spreadsheet, you're ready. The technical part is my job; the session is about your judgment, not your keyboard skills.</p></details>
+    <details><summary>What about our customer data?</summary><p>We talk about this in the first hour, because it matters. You'll leave with a short written rule for what can go into an AI tool and what can't, and we set up the tools so those rules are easy to follow.</p></details>
+    <details><summary>Remote or in person?</summary><p>Both. In the Phoenix metro I'll come to you. Anywhere else, we run it over video with screen sharing, and it works nearly as well.</p></details>
+    <details><summary>Can you just build it for us instead?</summary><p>Yes, that's the 30-Day Build. But I'll still teach you how it works, because a workflow nobody on your team understands stops working the first time a tool updates.</p></details>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Tell me about <span>the business.</span></h2>
+  <p>I'll tell you what a session would cover. A short email is enough: what you do, how many people, and the one task you'd most like to stop doing by hand.</p>
+  <div class="cta"><a class="btn" href="mailto:aaronjohnwilkinson@gmail.com?subject=Working%20session%20for%20my%20business">Email Aaron</a><a class="btn ghost" href="https://www.aaronjwilkinson.com">About Aaron</a></div>
+</section>
+<footer><div>© 2026 Adept Advisors · Phoenix, Arizona</div><div>Independent. No software resold, no referral fees.</div><div>The practice of <a href="https://www.aaronjwilkinson.com" style="color:var(--accent);border-bottom:1px solid var(--accent)">Aaron Wilkinson</a></div></footer>
+</div>
+</body></html>
