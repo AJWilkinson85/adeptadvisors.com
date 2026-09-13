@@ -75,19 +75,35 @@ section{padding:80px 0;border-bottom:1px solid var(--line)}
 .contact p{margin-top:18px;font-size:19px;color:var(--ink2);max-width:32em}
 .contact .cta{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap}
 footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 24px;border-top:1px solid var(--line)}
-@media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px}.who{grid-template-columns:1fr}.curr{grid-template-columns:1fr}.offers{grid-template-columns:1fr}.about{grid-template-columns:1fr}}
+.guide{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.guide .sec-h{margin-bottom:0}
+.lead-form{background:#fff;border:1px solid var(--ink);padding:28px;display:grid;gap:14px}
+.lead-form label{display:grid;gap:6px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+.lead-form input{font:16px/1.4 var(--body);color:var(--ink);padding:12px 14px;border:1px solid var(--line);background:var(--bg);border-radius:0}
+.lead-form input:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.lead-form button{cursor:pointer;margin-top:4px}
+.lead-form .fine{font-size:13px;color:var(--mute);font-family:var(--mono)}
+.hp{position:absolute;left:-9999px;top:-9999px;height:0;width:0;overflow:hidden}
+#thanks{display:none;background:var(--dark);color:#E4E9ED;border:1px solid var(--darkline);padding:22px 26px;margin-bottom:28px;font-size:17px}
+#thanks b{color:#D4894B;font-family:var(--display);font-variation-settings:"wdth" 88;font-size:20px;display:block;margin-bottom:4px}
+#thanks:target{display:block}
+.book-embed{margin-top:36px;border:1px solid var(--line);background:#fff;overflow:hidden}
+.book-embed iframe{display:block;width:100%;height:640px;border:0}
+.contact .alt{margin-top:16px;font-family:var(--mono);font-size:12px;color:var(--mute);letter-spacing:.04em}
+.contact .alt a{color:var(--accent);border-bottom:1px solid var(--accent)}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:36px}.guide{grid-template-columns:1fr;gap:32px}.book-embed iframe{height:560px}.who{grid-template-columns:1fr}.curr{grid-template-columns:1fr}.offers{grid-template-columns:1fr}.about{grid-template-columns:1fr}}
 @media(max-width:600px){.wrap{padding:0 18px}.top nav{display:none}.top .mark{font-size:20px}.hero{padding:40px 0 44px}section{padding:60px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
 </style></head><body>
 <div class="wrap">
-<header class="top"><a class="mark" href="#"><i></i>Adept <span style="color:var(--accent)">Advisors</span></a><nav><a href="#learn">What you learn</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="https://members.adeptadvisors.com">Members</a><a class="btn" href="#contact">Book a session</a></nav></header>
+<header class="top"><a class="mark" href="#"><i></i>Adept <span style="color:var(--accent)">Advisors</span></a><nav><a href="#learn">What you learn</a><a href="#offers">Offers</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="https://members.adeptadvisors.com">Members</a><a class="btn" href="#book">Book a call</a></nav></header>
 
 <section class="hero">
   <div>
     <div class="eyebrow">AI literacy for people who run businesses</div>
     <h1>Learn to use AI on your <span>actual work,</span> not on demos.</h1>
     <p>A half-day working session for owner-operators and their teams. You bring the real inbox, the real quotes, the real books. You leave with three workflows running and a written playbook for the rest.</p>
-    <div class="cta"><a class="btn" href="#offers">See the offers</a><a class="btn ghost" href="#learn">What's covered</a><small>Phoenix, Arizona · on-site or remote</small></div>
+    <div class="cta"><a class="btn" href="#book">Book a 30-minute call</a><a class="btn ghost" href="#offers">See the offers</a><small>Phoenix, Arizona · on-site or remote</small></div>
   </div>
   <aside class="board" aria-label="Sample session agenda">
     <div class="t"><span>Working session · agenda</span><span>4h 00m</span></div>
@@ -124,6 +140,27 @@ footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing
   </div>
 </section>
 
+<section id="guide">
+  <div id="thanks"><b>Check your inbox.</b>The guide is on its way from hello@adeptadvisors.com. If it isn't there in a few minutes, look in spam or promotions and drag it to your inbox.</div>
+  <div class="guide">
+    <div class="sec-h">
+      <div class="eyebrow">Free guide · five minutes</div>
+      <h2>Write your business brief before you use AI on anything.</h2>
+      <p>One page about your business that you paste into every real conversation, so the tool never starts from zero. It is the first thing we build in every session. Get the guide and write yours this week.</p>
+    </div>
+    <form class="lead-form" action="https://members.adeptadvisors.com/api/lead" method="post">
+      <input type="hidden" name="source" value="homepage">
+      <input type="hidden" name="redirect" value="https://adeptadvisors.com/#thanks">
+      <div class="hp" aria-hidden="true"><label>Website<input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+      <label>Email<input type="email" name="email" required autocomplete="email" placeholder="you@yourbusiness.com"></label>
+      <label>First name<input type="text" name="name" autocomplete="given-name" placeholder="Optional"></label>
+      <label>Business<input type="text" name="business" autocomplete="organization" placeholder="What you do, in a few words"></label>
+      <button class="btn" type="submit">Send me the guide</button>
+      <div class="fine">One email with the guide. No list, no drip sequence.</div>
+    </form>
+  </div>
+</section>
+
 <section id="offers">
   <div class="sec-h"><h2>Three ways to work together.</h2><p>Start with the session. Most people stop there. Some want it built for them.</p></div>
   <div class="offers">
@@ -133,7 +170,7 @@ footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing
       <div class="price">$1,500 <small>/ half day</small></div>
       <div class="for">Owner plus up to five people. On-site in the Phoenix area, or remote.</div>
       <ul><li>Four hours, hands-on, on your real work</li><li>Three workflows running before we leave</li><li>A written playbook for your business</li><li>90 days in the Adept Library, for your whole team</li><li>Two weeks of email follow-up</li></ul>
-      <a class="btn" href="#contact">Book a session</a>
+      <a class="btn" href="#book">Book a session</a>
     </article>
     <article class="offer">
       <div class="k">Have it built</div>
@@ -141,7 +178,7 @@ footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing
       <div class="price">$4,500 <small>/ engagement</small></div>
       <div class="for">For businesses that want the workflows built, tested, and handed over.</div>
       <ul><li>Everything in the Working Session</li><li>Three to five workflows built with you</li><li>Weekly working calls for four weeks</li><li>Documentation your staff can follow</li><li>Connected to the tools you already use</li></ul>
-      <a class="btn ghost" href="#contact">Ask about a build</a>
+      <a class="btn ghost" href="#book">Ask about a build</a>
     </article>
     <article class="offer">
       <div class="k">Keep it running</div>
@@ -149,7 +186,7 @@ footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing
       <div class="price">$600 <small>/ month</small></div>
       <div class="for">For owners who want someone to ask when the tools change, which is monthly.</div>
       <ul><li>Two office-hours calls a month</li><li>Same-week answers by email</li><li>The Adept Library: 36 written lessons and recipes, for your whole team</li><li>One new workflow each quarter</li><li>Cancel any month</li></ul>
-      <a class="btn ghost" href="#contact">Ask about advisory</a>
+      <a class="btn ghost" href="#book">Ask about advisory</a>
     </article>
   </div>
   <p class="note">Pricing is flat and quoted up front. If a session doesn't produce at least one workflow you'll keep using, you don't pay for it. The Adept Library is the written version of the session: twelve modules, thirty-six lessons, every prompt as a copy-paste recipe, each ending with an exercise on your own material. It comes with the session and with Advisor on Call; it isn't sold on its own.</p>
@@ -179,10 +216,12 @@ footer{padding:28px 0 40px;font-family:var(--mono);font-size:11px;letter-spacing
   </div>
 </section>
 
-<section id="contact" class="contact">
+<section id="book" class="contact">
   <h2>Tell me about <span>the business.</span></h2>
-  <p>I'll tell you what a session would cover. A short email is enough: what you do, how many people, and the one task you'd most like to stop doing by hand.</p>
-  <div class="cta"><a class="btn" href="mailto:aaronjohnwilkinson@gmail.com?subject=Working%20session%20for%20my%20business">Email Aaron</a><a class="btn ghost" href="https://www.aaronjwilkinson.com">About Aaron</a></div>
+  <p>Thirty minutes on a video call. You tell me what you do, how many people, and the one task you'd most like to stop doing by hand. I tell you what a session would cover and whether it's worth your money. No pitch deck.</p>
+  <div class="cta"><a class="btn" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2xViJ1vnDV-16qyzdL6ci-jbdw-1kA1msb4oCTilY4RVRRl-qvZInV13toTzm25U5_keG8OxJT" target="_blank" rel="noopener">Book a 30-minute call</a><a class="btn ghost" href="https://www.aaronjwilkinson.com">About Aaron</a></div>
+  <div class="alt">Prefer email? <a href="mailto:hello@adeptadvisors.com?subject=Working%20session%20for%20my%20business">hello@adeptadvisors.com</a></div>
+  <div class="book-embed"><iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2xViJ1vnDV-16qyzdL6ci-jbdw-1kA1msb4oCTilY4RVRRl-qvZInV13toTzm25U5_keG8OxJT?gv=true" loading="lazy" title="Book an intro call with Aaron"></iframe></div>
 </section>
 <footer><div>© 2026 Adept Advisors · Phoenix, Arizona</div><div>Independent. No software resold, no referral fees.</div><div>The practice of <a href="https://www.aaronjwilkinson.com" style="color:var(--accent);border-bottom:1px solid var(--accent)">Aaron Wilkinson</a></div></footer>
 </div>
